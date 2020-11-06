@@ -1,0 +1,50 @@
+{
+  "Actions": [
+    {
+      "Icon": "assets/volumeUp",
+      "Name": "Volume +",
+      "States": [
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Increases the volume of the selected audio device.",
+      "UUID": "com.x2software.streamdeck.audiodevice.volumeup"
+    },
+    {
+      "Icon": "assets/volumeDown",
+      "Name": "Volume -",
+      "States": [
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Decreases the volume of the selected audio device.",
+      "UUID": "com.x2software.streamdeck.audiodevice.volumedown"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Mark van Renswoude",
+  "Category": "Audio device",
+  "CodePath": "AudioDevice.exe",
+  "Description": "Multimedia controls for a specific device, which does not have to be the default output. Useful when using a virtual audio device like VoiceMeeter.",
+  "Name": "AudioDevice",
+  "Icon": "assets/pluginIcon",
+  "URL": "https://www.github.com/MvRens/StreamDeckPlugins",
+  "Version": "0.1",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.1"
+  }
+}

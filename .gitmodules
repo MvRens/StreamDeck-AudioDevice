@@ -1,0 +1,3 @@
+[submodule "StreamDeck.NET"]
+	path = StreamDeck.NET
+	url = https://github.com/MvRens/StreamDeck.NET.git
