@@ -8,11 +8,17 @@
           "Image": "actionDefaultImage",
           "TitleAlignment": "middle",
           "FontSize": "16"
+        },
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
         }
       ],
       "SupportedInMultiActions": true,
       "Tooltip": "Increases the volume of the selected audio device.",
-      "UUID": "com.x2software.streamdeck.audiodevice.volumeup"
+      "UUID": "com.x2software.streamdeck.audiodevice.volumeup",
+      "PropertyInspectorPath": "assets/propertyInspector/deviceSelection.html"
     },
     {
       "Icon": "assets/volumeDown",
@@ -22,11 +28,97 @@
           "Image": "actionDefaultImage",
           "TitleAlignment": "middle",
           "FontSize": "16"
+        },
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
         }
       ],
       "SupportedInMultiActions": true,
       "Tooltip": "Decreases the volume of the selected audio device.",
-      "UUID": "com.x2software.streamdeck.audiodevice.volumedown"
+      "UUID": "com.x2software.streamdeck.audiodevice.volumedown",
+      "PropertyInspectorPath": "assets/propertyInspector/deviceSelection.html"
+    },
+    {
+      "Icon": "assets/toggleMuted",
+      "Name": "Toggle muted",
+      "States": [
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        },
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Toggles the muted state of the device.",
+      "UUID": "com.x2software.streamdeck.audiodevice.togglemuted",
+      "PropertyInspectorPath": "assets/propertyInspector/deviceSelection.html"
+    },
+    {
+      "Icon": "assets/setMuted",
+      "Name": "Mute",
+      "States": [
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        },
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Mutes the selected device.",
+      "UUID": "com.x2software.streamdeck.audiodevice.setmuted",
+      "PropertyInspectorPath": "assets/propertyInspector/deviceSelection.html"
+    },
+    {
+      "Icon": "assets/setUnmuted",
+      "Name": "Unmute",
+      "States": [
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        },
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Unmutes the selected device.",
+      "UUID": "com.x2software.streamdeck.audiodevice.setunmuted",
+      "PropertyInspectorPath": "assets/propertyInspector/deviceSelection.html"
+    },
+    {
+      "Icon": "assets/setDefault",
+      "Name": "Set as default",
+      "States": [
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        },
+        {
+          "Image": "actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Sets the selected device as the default playback device.",
+      "UUID": "com.x2software.streamdeck.audiodevice.setdefault",
+      "PropertyInspectorPath": "assets/propertyInspector/deviceSelection.html"
     }
   ],
   "SDKVersion": 2,

@@ -6,15 +6,13 @@ using StreamDeck.NET.Message.Received;
 
 namespace AudioDevice.Action
 {
-    [StreamDeckAction(ActionUUID.VolumeUp)]
-    public class VolumeUpAction : BaseAudioDeviceAction
+    [StreamDeckAction(ActionUUID.SetDefault)]
+    public class SetDefaultAction : BaseAudioDeviceAction
     {
-        public VolumeUpAction(IStreamDeckClient client) : base(client) { }
+        public SetDefaultAction(IStreamDeckClient client) : base(client) { }
 
-
-        // TODO support two states (when already at max) ?
-
-
+        // TODO support two states
+        
         public override async Task KeyDown(StreamDeckKeyDownEventMessage message)
         {
             if (Device == null)
@@ -23,11 +21,8 @@ namespace AudioDevice.Action
                 return;
             }
 
-            if (Device.Volume >= 100)
-                return;
-
-            // TODO configurable steps?
-            await Device.SetVolumeAsync(Math.Min(Device.Volume + 5, 100));
+            await Device.SetAsDefaultAsync();
         }
     }
+
 }
